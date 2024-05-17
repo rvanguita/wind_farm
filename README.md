@@ -1,8 +1,8 @@
 # Wind Farm
 The datasets provide information collected at 10-minute intervals from six turbines and three meteorological masts, arranged in six files associated with each turbine. The turbines are named WT1 through WT6, respectively. The data were collected at two wind farms: one offshore and one onshore.
 
-![](assets/img/power.jpg)
-
+<!-- ![withe](assets/img/power.jpg) -->
+<img src="assets/img/power.jpg)" alt="drawing" width="200"/>
 
 
 ## [Dataset Description](https://zenodo.org/records/5516552)
