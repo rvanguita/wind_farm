@@ -1,5 +1,6 @@
 # Wind Farm
 
+![](assets/img/power.jpg)
 
 
 
