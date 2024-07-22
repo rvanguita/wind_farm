@@ -9,12 +9,13 @@ One of the most discussed topics in the last decade is the efficiency and implem
  
 ## Objective
 
+This work aims to forecast the wind power generation of four turbines over a one-year period. As shown in the figure at the beginning of this text, the curve representing this generation is not linear, thus excluding the use of linear machine learning (ML) models. Since this is a time series regression problem, we also cannot use cross-validation, as it would remove the bias found in some months' generation.
 
-
-
-
-
-
+The work is divided as follows: 
+- presentation of the dataset, along with a brief explanation of the data; 
+- data analysis to find the best features for the application of ML models; 
+- implementation of the ML models; conclusion of this work; 
+- and a brief presentation of the next steps and encountered difficulties.
 
 ## [Dataset Description](https://zenodo.org/records/5516552)
 
