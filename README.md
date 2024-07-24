@@ -42,3 +42,11 @@ The datasets provide information collected at 10-minute intervals from six turbi
     - S: vertical wind shear;
     - Sa: above-hub height wind shear;
     - Sb: below-hub height wind shear.
+  
+## Methodology
+
+
+As seen in the previous section, there are six data files, each representing a wind turbine (WT1 to WT6). For the data presentation below, it is necessary to understand which data were used. In this work, the data from four turbines, WT1 to WT4, were used, referred to as windfarm_Onshore. The same analyses were performed for the offshore turbines, WT5 and WT6, referred to as windfarm_Offshore, but they will not be presented in this document. All results can be found in the **main.ipynb** file.
+
+
+![](assets/img/boxplot.png)
