@@ -80,7 +80,7 @@ The method that will be used is XGBRegressor. eXtreme Gradient Boosting (XGBoost
 
 As explained by [Mario Filho](https://mariofilho.com/validacao-de-series-temporais-em-machine-learning-usando-python/#valida%C3%A7%C3%A3o-temporal-simples-com-ponto-fixo), validating a time series presents a pitfall when evaluating the method. Using techniques such as cross-validation or train_test_split removes some intrinsic characteristics of the data, thus worsening the model's predictability. This is so important that, as shown in the table below, if unaware of this, one might use cross-validation without hesitation.
 
-The table below is ordered by RMSE, where, excluding the first two techniques, the best is Temporal Validation with Expanding Window. Essentially, we train the model with each preceding data point, meaning that in month 2, we train the model with data from month 1; in month 3, we train the model with data from months 1 and 2, and so on until month 12, where we train the model with data from months 1 to 11. This results in greater accuracy in the prediction for each month.
+The table below is ordered by RMSE, where, excluding the first two techniques, the best is Temporal Validation with Expanding Window. Essentially, we train the model with each preceding data point, meaning that in month 2, we train the model with data from month 1; in month 3, we train the model with data from months 1 and 2, and so on until month 12, where we train the model with data from months 1 to 11. This results in greater accuracy in the prediction for each month. The choice of this technique was based on the analysis, primarily of RMSE and MAPE. Although Simple Temporal Validation with Fixed Point had a better RMSE, the difference between the predicted and analyzed values is greater than in the Temporal Validation with Expanding Window technique.
 
 | index_name        | R2 (%) | RMSE | MAE | WMAPE | male (%) | MAPE          |
 |-------------------|--------|------|-----|-------|----------|---------------|
@@ -100,9 +100,9 @@ A library I just came across is SHAP, which aims to graphically show how the mod
 
 
 
-In this analysis, we examined the data from a wind farm. I demonstrated some analyses of the data related to two turbines, showing the impact that environmental data has on power generation.
+In this analysis, the data from a wind farm was examined. Some analyses of the data related to two turbines were demonstrated, showing the impact that environmental data has on power generation.
 
-We also evaluated a time series, studying different validation methods and comparing them with standard data. The following methods were used for validation:
+A time series was also evaluated, studying different validation methods and comparing them with standard data. The following methods were used for validation:
 
 - Simple Temporal Validation with Fixed Point
 - Temporal Validation with Sliding Window
